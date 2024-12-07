@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Type Gym - Typing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="nav-bar">
+        <div class="nav-content">
+            <a href="/" class="logo">typegym</a>
+            <nav class="nav-links">
+                <a href="/" class="nav-link active">typing</a>
+                <a href="/cps.html" class="nav-link">cps</a>
+                <a href="/reaction.html" class="nav-link">reaction</a>
+                <a href="/aim.html" class="nav-link">aim</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="terminal">
+        <div class="type-test">
+            <div class="text-display"></div>
+            <input id="input-field" class="input-field" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
+        </div>
+
+        <div class="stats-container">
+            <div class="stats-left">
+                <div class="stat">wpm: <span id="wpmValue">0</span></div>
+                <div class="stat">accuracy: <span id="accuracyValue">0%</span></div>
+                <div class="stat">characters: <span id="charactersValue">0</span></div>
+            </div>
+            <div class="stats-right">
+                <canvas id="statsChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="nav.js"></script>
+
+    <div class="footer">
+        by <a href="https://github.com/ashfelloff" target="_blank">ashfelloff</a>
+    </div>
+</body>
+</html> 

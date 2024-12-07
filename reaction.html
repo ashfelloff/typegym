@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Type Gym - Reaction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <div class="logo">typegym</div>
+            <div class="burger">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+            <div class="nav-links">
+                <a href="/" class="nav-link">typing</a>
+                <a href="/cps.html" class="nav-link">cps</a>
+                <a href="/reaction.html" class="nav-link active">reaction</a>
+                <a href="/aim.html" class="nav-link">aim</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="terminal">
+        <div class="reaction-test">
+            <div class="reaction-box">Click to start</div>
+        </div>
+
+        <div class="stats-container">
+            <div class="stats-left">
+                <div class="stat">ms: <span id="msValue">0</span></div>
+                <div class="stat">avg: <span id="avgValue">0</span></div>
+                <div class="stat">speed: <span id="speedValue">slow</span></div>
+            </div>
+            <div class="stats-right">
+                <canvas id="statsChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        by <a href="https://github.com/ashfelloff" target="_blank">ashfelloff</a>
+    </div>
+    <script src="nav.js"></script>
+    <script src="reaction.js"></script>
+</body>
+</html> 
